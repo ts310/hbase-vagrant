@@ -1,7 +1,5 @@
 DEPENDENCIES
-  hadoop
-    git: https://github.com/caskdata/hadoop_cookbook
-    revision: 7067888e5645384c01dfc64248cd4bdb4b46643a
+  git
   java
   nginx
   yum-epel
@@ -16,13 +14,12 @@ GRAPH
     7-zip (>= 0.0.0)
   chef_handler (1.3.0)
   compat_resource (12.7.3)
-  hadoop (2.2.0)
-    apt (>= 2.1.2)
-    java (~> 1.21)
-    selinux (>= 0.0.0)
-    sysctl (>= 0.0.0)
-    ulimit (>= 0.0.0)
-    yum (>= 3.0)
+  dmg (2.3.0)
+  git (4.3.7)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    windows (>= 0.0.0)
+    yum-epel (>= 0.0.0)
   java (1.39.0)
     apt (>= 0.0.0)
   nginx (2.7.6)
@@ -38,10 +35,6 @@ GRAPH
     compat_resource (>= 0.0.0)
   runit (1.7.6)
     packagecloud (>= 0.0.0)
-  selinux (0.9.0)
-  sysctl (0.7.0)
-    ohai (>= 0.0.0)
-  ulimit (0.3.3)
   windows (1.39.1)
     chef_handler (>= 0.0.0)
   yum (3.10.0)

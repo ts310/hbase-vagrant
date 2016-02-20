@@ -1,21 +1,14 @@
 {
   "run_list": [
     "yum-epel",
+    "git",
     "nginx",
     "java",
-    "hadoop",
-    "hadoop::hbase",
-    "hadoop::hbase_master",
     "default"
   ],
-  "hadoop": {
-    "hdfs_site": {
-      "dfs.datanode.max.transfer.threads": "4096"
-    }
-  },
   "java": {
-    "install_flavor": "oracle",
-    "jdk_version": 7,
+    "install_flavor": "openjdk",
+    "jdk_version": 8,
     "oracle": {
       "accept_oracle_download_terms": true
     }

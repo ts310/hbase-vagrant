@@ -3,4 +3,4 @@ source "https://api.berkshelf.com"
 cookbook 'yum-epel'
 cookbook 'nginx'
 cookbook 'java'
-cookbook 'hadoop', git: 'https://github.com/caskdata/hadoop_cookbook'
+cookbook 'git'
