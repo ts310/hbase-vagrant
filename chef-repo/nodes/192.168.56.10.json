@@ -3,16 +3,9 @@
     "yum-epel",
     "git",
     "nginx",
-    "java",
-    "default"
+    "default",
+    "role[hbase]"
   ],
-  "java": {
-    "install_flavor": "openjdk",
-    "jdk_version": 8,
-    "oracle": {
-      "accept_oracle_download_terms": true
-    }
-  },
   "automatic": {
     "ipaddress": "192.168.56.10"
   }
